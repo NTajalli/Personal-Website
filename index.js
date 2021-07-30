@@ -18,7 +18,8 @@ const initDescriptionAnimation = function (i) {
     "Student",
     "Goalkeeper",
     "Software Engineer",
-    "Disappointment",
+    "Traveler",
+    "Creator",
   ];
 
   //Check to make sure the index is valid and initiate the animation
