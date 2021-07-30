@@ -1,0 +1,42 @@
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    height: 120px;
+    padding: 20px 15px;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  .navbar ul {
+    justify-content: space-around;
+  }
+
+  .navbar li {
+    padding: auto 100px;
+  }
+
+  .navbar a {
+    padding: 10px;
+    text-align: center;
+    display: inline;
+  }
+
+  .hero .content h1 {
+    font-size: 30px;
+  }
+
+  .hero .content h2 {
+    margin-top: 15%;
+    font-size: 14px;
+  }
+
+  .hero .content .description-animation {
+    font-size: 30px;
+  }
+}

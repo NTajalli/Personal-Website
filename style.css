@@ -1,0 +1,155 @@
+@import url("http://fonts.googleapis.com/css?family=Lato:400,700");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.title {
+  cursor: pointer;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: url(./imgs/stars3.jpg) no-repeat center center/cover;
+  position: relative;
+  color: #fff;
+}
+
+.hero .content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 5%;
+  line-height: 1.6;
+}
+
+.hero .content h1 {
+  text-align: center;
+  font-weight: 800;
+  font-size: 60px;
+  width: fit-content;
+  font-family: "Press Start 2P", serif;
+  background: rgba(25, 25, 25, 0.2);
+  border-radius: 10px;
+}
+
+.hero .content h2 {
+  margin-top: 5%;
+  font-size: 45px;
+  font-family: "Press Start 2P", serif;
+  background: rgba(17, 17, 17, 0.3);
+  border-radius: 10px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(17, 17, 17, 0.5);
+  color: #fff;
+  width: 100%;
+  height: 70px;
+  padding: 0 40px;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 10px 20px;
+}
+.navbar ul li a:hover {
+  color: #a569bd;
+  font-weight: 500;
+  border-bottom: #a569bd 1px solid;
+}
+
+.description-animation {
+  margin-top: 5%;
+  color: #8e44ad;
+  font-weight: 800;
+  font-family: "Press Start 2P", serif;
+  background: rgba(17, 17, 17, 0.3);
+  border-radius: 10px;
+}
+
+.hero .content .description-animation {
+  font-size: 60px;
+}
+
+.portrait {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.portrait img {
+  width: 10%;
+  height: fit-content;
+  border-radius: 50%;
+}
+
+.footer {
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 150px;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer .social {
+  margin-bottom: 10px;
+}
+
+.footer .social > * {
+  margin-right: 30px;
+}
+
+.footer a:hover {
+  color: #a569bd;
+}
+
+.footer p {
+  color: #8e44ad;
+}
+
+.centered {
+  text-align: center;
+  flex: 1;
+}
