@@ -37,4 +37,6 @@ const initDescriptionAnimation = function (i) {
   }
 };
 
-document.addEventListener("DOMContentLoaded", initDescriptionAnimation(0));
+document.addEventListener("DOMContentLoaded", function () {
+  initDescriptionAnimation(0);
+});

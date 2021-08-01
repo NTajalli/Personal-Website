@@ -1,3 +1,7 @@
 .text-primary {
   color: #8e44ad;
 }
+
+.hidden {
+  display: none;
+}
