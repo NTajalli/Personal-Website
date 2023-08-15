@@ -23,7 +23,7 @@ module.exports = {
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
-              outputPath: 'images/', // Output directory for images
+              outputPath: './', // Output directory for images
             },
           },
         ],
@@ -48,7 +48,7 @@ module.exports = {
       filename: 'contact.html',
     }),
     new MiniCssExtractPlugin({
-      filename: 'styles.css', // custom filename for your CSS
+      filename: 'styles.css', 
     }),
   ],
   optimization: {
