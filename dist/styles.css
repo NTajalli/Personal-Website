@@ -73,26 +73,55 @@ body, html {
 
 }
 
-footer {
-  background-color: #333;
-  padding: 20px;
-  text-align: center;
-  margin-top: auto;
-  bottom: 0; /* Stick to the bottom */
-  max-width: 100%; /* Full width */
-}
-
 #introduction {
   text-align: center; /* Center the text */
-  padding: 20px; /* Add some padding */
+  padding: 20px 0px; /* Add some padding */
   font-size: 18px; /* Set the font size */
   color: white; /* Neon blue text color */
   line-height: 1.5; /* Increase line spacing for readability */
   
 }
 
+footer {
+  
+  background-color: #333;
+  text-align: center;
+  margin-top: 4%;
+  bottom: 0; /* Stick to the bottom */
+  max-width: 100%; /* Full width */
+}
 
-footer a {
+.footer-details {
+  display: flex;
+  margin: auto 10%;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.footer-details .copyright,
+.footer-details .contact-info {
+  margin: 10px;
+  font-size: 14px;
+}
+
+.footer-details .contact-info a {
+  color: #00FFFF;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.footer-details .contact-info a:hover {
+  text-decoration: underline;
+}
+
+.footer-details .footer-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-details .footer-socials a {
   margin: 0 10px;
 }
 
@@ -105,6 +134,11 @@ footer img:hover {
   transform: scale(1.2);
 }
 
+footer p {
+  margin: 5px auto;
+}
+
+
 #typeEffect {
   min-height: 50px; /* Adjust the height based on your styling */
   max-height: 50px;
@@ -113,7 +147,6 @@ footer img:hover {
 #infoSection {
   display: flex; /* Align boxes horizontally */
   justify-content: space-between; /* Add space between the boxes */
-  padding: 0 40px; /* Add horizontal padding */
 }
 
 .infoBox {
@@ -128,11 +161,6 @@ footer img:hover {
   margin-right: 20px; /* Add right margin to the first box */
 }
 
-#contact-section {
-  padding: 20px;
-  padding: 0px 60px 20px 60px; /* 20px top and bottom, 40px left and right */
-
-}
 
 form {
   display: flex;
@@ -172,8 +200,8 @@ input[type="submit"]:hover {
 
 .project {
   border: 2px solid #00FFFF; /* Neon blue border */
-  padding: 20px;
-  margin-bottom: 20px;
+  padding: 0px 20px 20px 20px;
+  margin-bottom: 30px;
 }
 
 .project-buttons {
@@ -191,5 +219,185 @@ input[type="submit"]:hover {
 
 .project-btn:hover {
   background-color: #00AFFF; /* Darker blue on hover */
+}
+
+#about-page {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+  color: #00FFFF;
+}
+
+#headshot-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+}
+
+#headshot-section img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid #00FFFF;
+  margin-bottom: 20px;
+}
+
+#headshot-section h1,
+#headshot-section p {
+  text-align: center;
+  margin: 10px 0;
+}
+
+#background-section,
+#work-experience-section {
+  padding: 20px;
+  border: 2px solid #00FFFF;
+  margin-bottom: 35px;
+  background-color: rgba(0, 255, 255, 0.1);
+}
+
+#background-section h2,
+#work-experience-section h2 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+#background-section p,
+#work-experience-section p {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.body-container {
+  padding: 0% 10%;
+}
+
+/* Add the following media queries to the end of your existing CSS */
+
+@media only screen and (max-width: 768px) {
+
+  /* Global Changes */
+  body, html {
+    font-size: 16px; /* Adjust base font size */
+  }
+
+  #navbar {
+    flex-direction: column; /* Stacking items vertically */
+    padding-left: 0;
+    align-items: flex-start; /* Aligning items to the start */
+  }
+
+  
+
+  #navbar a {
+    padding: 8px 20px; /* Adjusting padding for touch screens */
+    margin-right: 0;
+    border-bottom: 1px solid #00FFFF; /* Optional: Add a divider between links */
+  }
+
+  #navbar {
+    position: relative;
+  }
+
+  #navbar-links {
+    position: absolute; /* Make it appear on top of other content */
+    top: 60px; /* Adjust based on your navbar height */
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    width: 100%; /* Full width of parent */
+    overflow: hidden; /* Hide overflowing content during animation */
+    max-height: 0; /* Start from no height (hidden) */
+    transition: max-height 0.3s ease-out; /* Animate max-height */
+  }
+
+  #hamburger-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #00FFFF; /* Neon blue color */
+  }
+
+  #navbar a {
+    display: block;
+    width: 100%;
+    text-align: left; 
+    padding: 10px;
+  }
+
+  #name {
+    font-size: 20px; /* Adjusting font size */
+    margin-top: 10px;
+  }
+
+  #home h1, #home h2 {
+    font-size: 28px; /* Adjusting font size */
+    padding: 5px; /* Reducing padding */
+  }
+
+  #introduction {
+    font-size: 16px; /* Adjusting font size */
+  }
+
+  .footer-details {
+    flex-direction: column; /* Stacking items vertically */
+    margin: auto 5%; /* Adjusting margin */
+  }
+
+  .footer-details .copyright,
+  .footer-details .contact-info {
+    margin: 5px; /* Adjusting margin */
+    text-align: center;
+  }
+
+  .footer-details .footer-socials {
+    margin-bottom: 10px;
+  }
+
+  #infoSection {
+    flex-direction: column; /* Stacking items vertically */
+  }
+
+  .infoBox:first-child {
+    margin-right: 0;
+    margin-bottom: 20px; /* Add bottom margin instead of right */
+  }
+
+  form {
+    width: 100%; /* Taking full width */
+  }
+
+  input, textarea {
+    width: 100%; /* Taking full width */
+  }
+
+  #contact-details {
+    text-align: center;
+  }
+
+  #projects-section {
+    padding: 20px; /* Adjusting padding */
+  }
+
+  #about-page {
+    padding: 20px; /* Adjusting padding */
+  }
+
+  #headshot-section img {
+    width: 100px;
+    height: 100px;
+  }
+
+  #background-section,
+  #work-experience-section {
+    padding: 15px;
+  }
+
+  .body-container {
+    padding: 0% 5%;
+  }
 }
 
