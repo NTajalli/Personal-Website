@@ -17,18 +17,17 @@ module.exports = {
         use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
       {
-        test: /\.(png|jpg|gif|svg|ico)$/,
+        test: /\.(png|jpe?g|gif)$/i,
         use: [
           {
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
-              outputPath: './', // Output directory for images
+              outputPath: './', 
             },
           },
         ],
       },
-      // Add other rules for different file types if needed
     ],
   },
   plugins: [
