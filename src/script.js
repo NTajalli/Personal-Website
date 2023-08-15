@@ -40,8 +40,10 @@ document.getElementById('hamburger-btn').addEventListener('click', function() {
 
   if (navbarLinks.style.maxHeight === '0px' || navbarLinks.style.maxHeight === '') {
     navbarLinks.style.maxHeight = '300px'; /* Adjust based on your estimated total height of links */
+    navbarLinks.style.minHeight = '300px';
   } else {
     navbarLinks.style.maxHeight = '0px';
+    navbarLinks.style.minHeight = '0px';
   }
 });
 
