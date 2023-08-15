@@ -290,16 +290,27 @@ input[type="submit"]:hover {
     align-items: flex-start; /* Aligning items to the start */
   }
 
+  
+
   #navbar a {
     padding: 8px 20px; /* Adjusting padding for touch screens */
     margin-right: 0;
     border-bottom: 1px solid #00FFFF; /* Optional: Add a divider between links */
   }
 
+  #navbar {
+    position: relative;
+  }
+
   #navbar-links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
+    position: absolute; /* Make it appear on top of other content */
+    top: 60px; /* Adjust based on your navbar height */
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    width: 100%; /* Full width of parent */
+    overflow: hidden; /* Hide overflowing content during animation */
+    max-height: 0; /* Start from no height (hidden) */
+    transition: max-height 0.3s ease-out; /* Animate max-height */
   }
 
   #hamburger-btn {
@@ -308,6 +319,13 @@ input[type="submit"]:hover {
     font-size: 24px;
     cursor: pointer;
     color: #00FFFF; /* Neon blue color */
+  }
+
+  #navbar a {
+    display: block;
+    width: 100%;
+    text-align: left; 
+    padding: 10px;
   }
 
   #name {

@@ -38,9 +38,10 @@ typeEffect();
 document.getElementById('hamburger-btn').addEventListener('click', function() {
   var navbarLinks = document.getElementById('navbar-links');
 
-  if (navbarLinks.style.display === 'none' || navbarLinks.style.display === '') {
-    navbarLinks.style.display = 'block';
+  if (navbarLinks.style.maxHeight === '0px' || navbarLinks.style.maxHeight === '') {
+    navbarLinks.style.maxHeight = '300px'; /* Adjust based on your estimated total height of links */
   } else {
-    navbarLinks.style.display = 'none';
+    navbarLinks.style.maxHeight = '0px';
   }
 });
+
