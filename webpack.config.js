@@ -16,6 +16,19 @@ module.exports = {
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
+      {
+        test: /\.(png|jpg|gif|svg|ico)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'images/', // Output directory for images
+            },
+          },
+        ],
+      },
+      // Add other rules for different file types if needed
     ],
   },
   plugins: [
