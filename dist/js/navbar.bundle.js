@@ -1,0 +1,1 @@
+(()=>{const e=document.getElementById("hamburger-btn"),t=document.getElementById("navbar-links");e.addEventListener("click",(()=>{"0px"===t.style.maxHeight||""===t.style.maxHeight?(t.style.maxHeight="285px",t.style.minHeight="285px"):(t.style.maxHeight="0px",t.style.minHeight="0px")}))})();

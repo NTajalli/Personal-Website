@@ -12,44 +12,65 @@ body, html {
   cursor: default; /* Standard cursor */
 }
 
+p {
+  color: white;
+}
+
 #navbar {
-  background-color: #333;
-  overflow: hidden;
-  min-height: 60px
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #2C2F33;
+  padding: 0px;
+  position: relative; /* This will allow dropdown positioning relative to navbar */
+  min-height: 10vh;
+  margin-bottom: 3vh;
 }
 
 #navbar a {
-  float: left;
-  display: block;
   color: #00FFFF;
-  text-align: center;
-  padding: 10px 10px;
   text-decoration: none;
+  height: 100%;
+  line-height: 50px;
+  min-width: 10%;
+  text-align: center;
+  min-width: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
-#navbar {
-  padding-left: 20px; /* Add padding to the left side */
-  display: flex; /* Align items horizontally */
-  align-items: center; /* Center items vertically */
-  margin-bottom: 20px;
-}
-
-#navbar a {
-  margin-right: 15px; /* Add space between the links */
-  text-decoration: none; /* Remove underline */
-  color: #00FFFF; /* Neon blue color */
-}
-
-#name {
-  font-family: 'Poppins', sans-serif; /* Use the Poppins font you linked */
-  font-weight: 700; /* Make it bold */
-  font-size: 24px; /* Increase font size */
-}
-
 
 #navbar a:hover {
-  background-color: #00FFFF;
   color: black;
+  background-color: #00FFFF;
+}
+
+#hamburger-btn {
+  display: none;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  color: #00FFFF;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+#navbar-links {
+  flex-direction: column;
+  position: absolute;
+  top: 100%;   /* Start where the navbar ends */
+  width: 100%; /* Take full viewport width */
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 0 0 5px 5px;
+  max-height: 0; /* Start with no height */
+  overflow: hidden; /* Prevents content from being visible outside */
+  transition: max-height 0.4s ease-in-out; /* Animation */
+}
+
+#navbar-links a {
+  display: block;
+  padding: 10px 15px;
+  border-bottom: 1px solid #00FFFF;
 }
 
 #home h1, #home h2 {
@@ -97,6 +118,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  color: white;
 }
 
 .footer-details .copyright,
@@ -202,6 +224,7 @@ input[type="submit"]:hover {
   border: 2px solid #00FFFF; /* Neon blue border */
   padding: 0px 20px 20px 20px;
   margin-bottom: 30px;
+  background-color: rgba(0, 255, 255, 0.1);
 }
 
 .project-buttons {
@@ -284,54 +307,18 @@ input[type="submit"]:hover {
     font-size: 16px; /* Adjust base font size */
   }
 
-  #navbar {
-    flex-direction: column; /* Stacking items vertically */
-    padding-left: 0;
-    align-items: flex-start; /* Aligning items to the start */
-  }
-
-  
-
-  #navbar a {
-    padding: 8px 20px; /* Adjusting padding for touch screens */
-    margin-right: 0;
-    border-bottom: 1px solid #00FFFF; /* Optional: Add a divider between links */
-  }
-
-  #navbar {
-    position: relative;
-  }
-
-  #navbar-links {
-    position: absolute; /* Make it appear on top of other content */
-    top: 60px; /* Adjust based on your navbar height */
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
-    width: 100%; /* Full width of parent */
-    overflow: hidden; /* Hide overflowing content during animation */
-    max-height: 0; /* Start from no height (hidden) */
-    transition: max-height 0.3s ease-out; /* Animate max-height */
-  }
-
   #hamburger-btn {
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    color: #00FFFF; /* Neon blue color */
-  }
-
-  #navbar a {
     display: block;
-    width: 100%;
-    text-align: left; 
-    padding: 10px;
+    z-index: 2;
+}
+
+  .pclinks {
+    display: none !important; /* Hide the main links */
   }
 
-  #name {
-    font-size: 20px; /* Adjusting font size */
-    margin-top: 10px;
-  }
+#navbar-links a {
+  display: block;
+}
 
   #home h1, #home h2 {
     font-size: 28px; /* Adjusting font size */
@@ -345,6 +332,8 @@ input[type="submit"]:hover {
   .footer-details {
     flex-direction: column; /* Stacking items vertically */
     margin: auto 5%; /* Adjusting margin */
+    padding: 5%;
+    gap: 10px;
   }
 
   .footer-details .copyright,
@@ -399,4 +388,9 @@ input[type="submit"]:hover {
   .body-container {
     padding: 0% 5%;
   }
+
+  input, label, textarea {
+    max-width: 90%;
+  }
+
 }
