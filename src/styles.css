@@ -274,3 +274,111 @@ input[type="submit"]:hover {
 .body-container {
   padding: 0% 10%;
 }
+
+/* Add the following media queries to the end of your existing CSS */
+
+@media only screen and (max-width: 768px) {
+
+  /* Global Changes */
+  body, html {
+    font-size: 16px; /* Adjust base font size */
+  }
+
+  #navbar {
+    flex-direction: column; /* Stacking items vertically */
+    padding-left: 0;
+    align-items: flex-start; /* Aligning items to the start */
+  }
+
+  #navbar a {
+    padding: 8px 20px; /* Adjusting padding for touch screens */
+    margin-right: 0;
+    border-bottom: 1px solid #00FFFF; /* Optional: Add a divider between links */
+  }
+
+  #navbar-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #hamburger-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #00FFFF; /* Neon blue color */
+  }
+
+  #name {
+    font-size: 20px; /* Adjusting font size */
+    margin-top: 10px;
+  }
+
+  #home h1, #home h2 {
+    font-size: 28px; /* Adjusting font size */
+    padding: 5px; /* Reducing padding */
+  }
+
+  #introduction {
+    font-size: 16px; /* Adjusting font size */
+  }
+
+  .footer-details {
+    flex-direction: column; /* Stacking items vertically */
+    margin: auto 5%; /* Adjusting margin */
+  }
+
+  .footer-details .copyright,
+  .footer-details .contact-info {
+    margin: 5px; /* Adjusting margin */
+    text-align: center;
+  }
+
+  .footer-details .footer-socials {
+    margin-bottom: 10px;
+  }
+
+  #infoSection {
+    flex-direction: column; /* Stacking items vertically */
+  }
+
+  .infoBox:first-child {
+    margin-right: 0;
+    margin-bottom: 20px; /* Add bottom margin instead of right */
+  }
+
+  form {
+    width: 100%; /* Taking full width */
+  }
+
+  input, textarea {
+    width: 100%; /* Taking full width */
+  }
+
+  #contact-details {
+    text-align: center;
+  }
+
+  #projects-section {
+    padding: 20px; /* Adjusting padding */
+  }
+
+  #about-page {
+    padding: 20px; /* Adjusting padding */
+  }
+
+  #headshot-section img {
+    width: 100px;
+    height: 100px;
+  }
+
+  #background-section,
+  #work-experience-section {
+    padding: 15px;
+  }
+
+  .body-container {
+    padding: 0% 5%;
+  }
+}
