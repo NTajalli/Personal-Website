@@ -73,26 +73,55 @@ body, html {
 
 }
 
-footer {
-  background-color: #333;
-  padding: 20px;
-  text-align: center;
-  margin-top: auto;
-  bottom: 0; /* Stick to the bottom */
-  max-width: 100%; /* Full width */
-}
-
 #introduction {
   text-align: center; /* Center the text */
-  padding: 20px; /* Add some padding */
+  padding: 20px 0px; /* Add some padding */
   font-size: 18px; /* Set the font size */
   color: white; /* Neon blue text color */
   line-height: 1.5; /* Increase line spacing for readability */
   
 }
 
+footer {
+  
+  background-color: #333;
+  text-align: center;
+  margin-top: 4%;
+  bottom: 0; /* Stick to the bottom */
+  max-width: 100%; /* Full width */
+}
 
-footer a {
+.footer-details {
+  display: flex;
+  margin: auto 10%;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.footer-details .copyright,
+.footer-details .contact-info {
+  margin: 10px;
+  font-size: 14px;
+}
+
+.footer-details .contact-info a {
+  color: #00FFFF;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.footer-details .contact-info a:hover {
+  text-decoration: underline;
+}
+
+.footer-details .footer-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-details .footer-socials a {
   margin: 0 10px;
 }
 
@@ -105,6 +134,11 @@ footer img:hover {
   transform: scale(1.2);
 }
 
+footer p {
+  margin: 5px auto;
+}
+
+
 #typeEffect {
   min-height: 50px; /* Adjust the height based on your styling */
   max-height: 50px;
@@ -113,7 +147,6 @@ footer img:hover {
 #infoSection {
   display: flex; /* Align boxes horizontally */
   justify-content: space-between; /* Add space between the boxes */
-  padding: 0 40px; /* Add horizontal padding */
 }
 
 .infoBox {
@@ -128,11 +161,6 @@ footer img:hover {
   margin-right: 20px; /* Add right margin to the first box */
 }
 
-#contact-section {
-  padding: 20px;
-  padding: 0px 60px 20px 60px; /* 20px top and bottom, 40px left and right */
-
-}
 
 form {
   display: flex;
@@ -172,8 +200,8 @@ input[type="submit"]:hover {
 
 .project {
   border: 2px solid #00FFFF; /* Neon blue border */
-  padding: 20px;
-  margin-bottom: 20px;
+  padding: 0px 20px 20px 20px;
+  margin-bottom: 30px;
 }
 
 .project-buttons {
@@ -191,4 +219,58 @@ input[type="submit"]:hover {
 
 .project-btn:hover {
   background-color: #00AFFF; /* Darker blue on hover */
+}
+
+#about-page {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+  color: #00FFFF;
+}
+
+#headshot-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+}
+
+#headshot-section img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid #00FFFF;
+  margin-bottom: 20px;
+}
+
+#headshot-section h1,
+#headshot-section p {
+  text-align: center;
+  margin: 10px 0;
+}
+
+#background-section,
+#work-experience-section {
+  padding: 20px;
+  border: 2px solid #00FFFF;
+  margin-bottom: 35px;
+  background-color: rgba(0, 255, 255, 0.1);
+}
+
+#background-section h2,
+#work-experience-section h2 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+#background-section p,
+#work-experience-section p {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.body-container {
+  padding: 0% 10%;
 }
