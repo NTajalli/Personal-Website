@@ -33,9 +33,23 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html', // Update with your HTML file
+      template: './src/index.html', 
     }),
-    new MiniCssExtractPlugin(),
+    new HtmlWebpackPlugin({
+      template: './src/about.html', 
+      filename: 'about.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/projects.html', 
+      filename: 'projects.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/contact.html', 
+      filename: 'contact.html',
+    }),
+    new MiniCssExtractPlugin({
+      filename: 'styles.css', // custom filename for your CSS
+    }),
   ],
   optimization: {
     minimize: true,

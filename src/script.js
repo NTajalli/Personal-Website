@@ -1,7 +1,10 @@
+import './styles.css';
+
 const typeEffectElement = document.getElementById("typeEffect");
 const words = ["Innovator", "Software Engineer", "Computer Scientist", "Mathematician", "Problem-Solver", "Creative Thinker", "technologist"];
 let wordIndex = 0;
 let letterIndex = 0;
+
 
 function typeEffect() {
     if (letterIndex < words[wordIndex].length) {
