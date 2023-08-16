@@ -160,6 +160,50 @@ footer p {
   margin: 5px auto;
 }
 
+/* Updated styles for .job sections */
+
+.job {
+  padding: 20px;
+  margin-bottom: 30px;
+  border-top: 2px solid #00FFFF; /* Neon blue top border */
+  border-bottom: 2px solid #00FFFF;
+  background-color: rgba(0, 255, 255, 0.1); /* Subtle background color */
+  border-radius: 5px; /* Rounded corners for a softer look at the top */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02); /* Adding a subtle shadow for depth */
+}
+
+.job h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #00FFFF; /* Keeping the Neon blue consistent */
+}
+
+.job .position {
+  margin-bottom: 20px;
+}
+
+.job .position strong {
+  font-size: 20px;
+  color: white;; /* Neon blue to keep consistency */
+}
+
+.job .position .dates {
+  font-size: 16px;
+  color: #999; /* Slightly greyed for differentiation */
+}
+
+.job p, .job ul { /* Making sure the job description and lists also have the Neon blue color */
+  color: white;
+}
+
+.job ul {
+  margin-top: 10px;
+}
+
+.job ul li {
+  margin-bottom: 10px;
+}
+
 
 #typeEffect {
   min-height: 50px; /* Adjust the height based on your styling */
@@ -176,6 +220,11 @@ footer p {
   padding: 20px; /* Add padding inside the boxes */
   background-color: rgba(0, 255, 255, 0.1); /* You can add a background color */
   border: 2px solid #00FFFF; /* Neon blue border */
+}
+
+#background-section {
+  background-color: rgba(0, 255, 255, .1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02); /* Adding a subtle shadow for depth */
 }
 
 /* Add a margin to separate the boxes if you like */
@@ -212,6 +261,10 @@ input[type="submit"]:hover {
   background-color: #00AFFF; /* Darker blue on hover */
 }
 
+.text-blue {
+  color: #00FFFF;
+}
+
 #contact-details {
   margin-top: 20px;
 }
@@ -223,9 +276,10 @@ input[type="submit"]:hover {
 .project {
   border: 2px solid #00FFFF; /* Neon blue border */
   padding: 0px 20px 20px 20px;
-  margin-bottom: 30px;
+  margin-bottom: 4%;;
   background-color: rgba(0, 255, 255, 0.1);
 }
+
 
 .project-buttons {
   display: flex;

@@ -1,6 +1,7 @@
 import './styles.css';
 import linkedin_icon from './github-icon.png';
 import github_icon from './linkedin-icon.png';
+import headshot from './headshot.jpg';
 
 const typeEffectElement = document.getElementById("typeEffect");
 const words = ["Innovator", "Software Engineer", "Computer Scientist", "Mathematician", "Problem-Solver", "Creative Thinker", "Technologist"];
