@@ -1,15 +1,19 @@
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif; /* Using Poppins font */
+  font-family: 'Poppins', sans-serif;
+  /* Using Poppins font */
   background-color: black;
   color: #00FFFF;
   height: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Minimum height of viewport */
-  cursor: default; /* Standard cursor */
+  min-height: 100vh;
+  /* Minimum height of viewport */
+  cursor: default;
+  /* Standard cursor */
 }
 
 p {
@@ -22,7 +26,8 @@ p {
   justify-content: flex-start;
   background-color: #2C2F33;
   padding: 0px;
-  position: relative; /* This will allow dropdown positioning relative to navbar */
+  position: relative;
+  /* This will allow dropdown positioning relative to navbar */
   min-height: 10vh;
   margin-bottom: 3vh;
 }
@@ -58,13 +63,18 @@ p {
 #navbar-links {
   flex-direction: column;
   position: absolute;
-  top: 100%;   /* Start where the navbar ends */
-  width: 100%; /* Take full viewport width */
+  top: 100%;
+  /* Start where the navbar ends */
+  width: 100%;
+  /* Take full viewport width */
   background-color: rgba(0, 0, 0, 0.9);
   border-radius: 0 0 5px 5px;
-  max-height: 0; /* Start with no height */
-  overflow: hidden; /* Prevents content from being visible outside */
-  transition: max-height 0.4s ease-in-out; /* Animation */
+  max-height: 0;
+  /* Start with no height */
+  overflow: hidden;
+  /* Prevents content from being visible outside */
+  transition: max-height 0.4s ease-in-out;
+  /* Animation */
 }
 
 #navbar-links a {
@@ -73,43 +83,60 @@ p {
   border-bottom: 1px solid #00FFFF;
 }
 
-#home h1, #home h2 {
+#home h1,
+#home h2 {
   padding: 10px;
-  font-size: 36px; /* Increased font size */
-  text-align: center; /* Centered text */
-  margin: 0; /* Remove default margins */
-  cursor: default; /* Standard cursor */
-  user-select: none; /* Prevent text selection */
+  font-size: 36px;
+  /* Increased font size */
+  text-align: center;
+  /* Centered text */
+  margin: 0;
+  /* Remove default margins */
+  cursor: default;
+  /* Standard cursor */
+  user-select: none;
+  /* Prevent text selection */
 
 }
+
 #home h1 {
   color: white;
 }
 
 #home h2 {
-  font-weight: 400; /* Lighter font weight for typing content */
+  font-weight: 400;
+  /* Lighter font weight for typing content */
   color: #00FFFF;
-  cursor: default; /* Standard cursor */
-  user-select: none; /* Prevent text selection */
+  cursor: default;
+  /* Standard cursor */
+  user-select: none;
+  /* Prevent text selection */
 
 }
 
 #introduction {
-  text-align: center; /* Center the text */
-  padding: 20px 0px; /* Add some padding */
-  font-size: 18px; /* Set the font size */
-  color: white; /* Neon blue text color */
-  line-height: 1.5; /* Increase line spacing for readability */
-  
+  text-align: center;
+  /* Center the text */
+  padding: 20px 0px;
+  /* Add some padding */
+  font-size: 18px;
+  /* Set the font size */
+  color: white;
+  /* Neon blue text color */
+  line-height: 1.5;
+  /* Increase line spacing for readability */
+
 }
 
 footer {
-  
+
   background-color: #333;
   text-align: center;
   margin-top: 4%;
-  bottom: 0; /* Stick to the bottom */
-  max-width: 100%; /* Full width */
+  bottom: 0;
+  /* Stick to the bottom */
+  max-width: 100%;
+  /* Full width */
 }
 
 .footer-details {
@@ -117,7 +144,8 @@ footer {
   margin: auto 10%;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  flex-wrap: wrap;
+  /* Allow items to wrap on smaller screens */
   color: white;
 }
 
@@ -165,17 +193,22 @@ footer p {
 .job {
   padding: 20px;
   margin-bottom: 30px;
-  border-top: 2px solid #00FFFF; /* Neon blue top border */
+  border-top: 2px solid #00FFFF;
+  /* Neon blue top border */
   border-bottom: 2px solid #00FFFF;
-  background-color: rgba(0, 255, 255, 0.1); /* Subtle background color */
-  border-radius: 5px; /* Rounded corners for a softer look at the top */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02); /* Adding a subtle shadow for depth */
+  background-color: rgba(0, 255, 255, 0.1);
+  /* Subtle background color */
+  border-radius: 5px;
+  /* Rounded corners for a softer look at the top */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+  /* Adding a subtle shadow for depth */
 }
 
 .job h3 {
   font-size: 24px;
   margin-bottom: 10px;
-  color: #00FFFF; /* Keeping the Neon blue consistent */
+  color: #00FFFF;
+  /* Keeping the Neon blue consistent */
 }
 
 .job .position {
@@ -184,15 +217,20 @@ footer p {
 
 .job .position strong {
   font-size: 20px;
-  color: white;; /* Neon blue to keep consistency */
+  color: white;
+  ;
+  /* Neon blue to keep consistency */
 }
 
 .job .position .dates {
   font-size: 16px;
-  color: #999; /* Slightly greyed for differentiation */
+  color: #999;
+  /* Slightly greyed for differentiation */
 }
 
-.job p, .job ul { /* Making sure the job description and lists also have the Neon blue color */
+.job p,
+.job ul {
+  /* Making sure the job description and lists also have the Neon blue color */
   color: white;
 }
 
@@ -206,30 +244,39 @@ footer p {
 
 
 #typeEffect {
-  min-height: 50px; /* Adjust the height based on your styling */
+  min-height: 50px;
+  /* Adjust the height based on your styling */
   max-height: 50px;
 }
 
 #infoSection {
-  display: flex; /* Align boxes horizontally */
-  justify-content: space-between; /* Add space between the boxes */
+  display: flex;
+  /* Align boxes horizontally */
+  justify-content: space-between;
+  /* Add space between the boxes */
 }
 
 .infoBox {
-  flex: 1; /* Each box takes up equal width */
-  padding: 20px; /* Add padding inside the boxes */
-  background-color: rgba(0, 255, 255, 0.1); /* You can add a background color */
-  border: 2px solid #00FFFF; /* Neon blue border */
+  flex: 1;
+  /* Each box takes up equal width */
+  padding: 20px;
+  /* Add padding inside the boxes */
+  background-color: rgba(0, 255, 255, 0.1);
+  /* You can add a background color */
+  border: 2px solid #00FFFF;
+  /* Neon blue border */
 }
 
 #background-section {
   background-color: rgba(0, 255, 255, .1);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02); /* Adding a subtle shadow for depth */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+  /* Adding a subtle shadow for depth */
 }
 
 /* Add a margin to separate the boxes if you like */
 .infoBox:first-child {
-  margin-right: 20px; /* Add right margin to the first box */
+  margin-right: 20px;
+  /* Add right margin to the first box */
 }
 
 
@@ -239,26 +286,34 @@ form {
   gap: 10px;
 }
 
-input, textarea {
+input,
+textarea {
   padding: 10px;
-  border: 2px solid #00FFFF; /* Neon blue border */
+  border: 2px solid #00FFFF;
+  /* Neon blue border */
   margin-bottom: 10px;
 }
 
 input[type="submit"] {
-  padding: 10px 20px; /* Adjust the padding */
-  border: none; /* Remove the border if not needed */
-  font-size: 16px; /* Adjust the font size */
-  background-color: #00FFFF; /* Neon blue background */
+  padding: 10px 20px;
+  /* Adjust the padding */
+  border: none;
+  /* Remove the border if not needed */
+  font-size: 16px;
+  /* Adjust the font size */
+  background-color: #00FFFF;
+  /* Neon blue background */
   color: black;
   cursor: pointer;
   transition: 0.3s;
-  max-width: 150px; /* You can set a max width */
+  max-width: 150px;
+  /* You can set a max width */
 }
 
 
 input[type="submit"]:hover {
-  background-color: #00AFFF; /* Darker blue on hover */
+  background-color: #00AFFF;
+  /* Darker blue on hover */
 }
 
 .text-blue {
@@ -270,32 +325,39 @@ input[type="submit"]:hover {
 }
 
 #projects-section {
-  padding: 20px 40px; /* Adjust as needed */
+  padding: 20px 40px;
+  /* Adjust as needed */
 }
 
 .project {
-  border: 2px solid #00FFFF; /* Neon blue border */
+  border: 2px solid #00FFFF;
+  /* Neon blue border */
   padding: 0px 20px 20px 20px;
-  margin-bottom: 4%;;
+  margin-bottom: 4%;
+  ;
   background-color: rgba(0, 255, 255, 0.1);
 }
 
 
 .project-buttons {
   display: flex;
-  gap: 10px; /* Space between buttons */
+  gap: 10px;
+  /* Space between buttons */
 }
 
 .project-btn {
   padding: 10px 20px;
-  background-color: #00FFFF; /* Neon blue background */
+  background-color: #00FFFF;
+  /* Neon blue background */
   color: black;
-  text-decoration: none; /* Remove underline */
+  text-decoration: none;
+  /* Remove underline */
   transition: 0.3s;
 }
 
 .project-btn:hover {
-  background-color: #00AFFF; /* Darker blue on hover */
+  background-color: #00AFFF;
+  /* Darker blue on hover */
 }
 
 #about-page {
@@ -357,42 +419,52 @@ input[type="submit"]:hover {
 @media only screen and (max-width: 768px) {
 
   /* Global Changes */
-  body, html {
-    font-size: 16px; /* Adjust base font size */
+  body,
+  html {
+    font-size: 16px;
+    /* Adjust base font size */
   }
 
   #hamburger-btn {
     display: block;
     z-index: 2;
-}
-
-  .pclinks {
-    display: none !important; /* Hide the main links */
   }
 
-#navbar-links a {
-  display: block;
-}
+  .pclinks {
+    display: none !important;
+    /* Hide the main links */
+  }
 
-  #home h1, #home h2 {
-    font-size: 28px; /* Adjusting font size */
-    padding: 5px; /* Reducing padding */
+  #navbar-links a {
+    display: block;
+  }
+
+  #home h1,
+  #home h2 {
+    font-size: 28px;
+    /* Adjusting font size */
+    padding: 5px;
+    /* Reducing padding */
   }
 
   #introduction {
-    font-size: 16px; /* Adjusting font size */
+    font-size: 16px;
+    /* Adjusting font size */
   }
 
   .footer-details {
-    flex-direction: column; /* Stacking items vertically */
-    margin: auto 5%; /* Adjusting margin */
+    flex-direction: column;
+    /* Stacking items vertically */
+    margin: auto 5%;
+    /* Adjusting margin */
     padding: 5%;
     gap: 10px;
   }
 
   .footer-details .copyright,
   .footer-details .contact-info {
-    margin: 5px; /* Adjusting margin */
+    margin: 5px;
+    /* Adjusting margin */
     text-align: center;
   }
 
@@ -401,20 +473,25 @@ input[type="submit"]:hover {
   }
 
   #infoSection {
-    flex-direction: column; /* Stacking items vertically */
+    flex-direction: column;
+    /* Stacking items vertically */
   }
 
   .infoBox:first-child {
     margin-right: 0;
-    margin-bottom: 20px; /* Add bottom margin instead of right */
+    margin-bottom: 20px;
+    /* Add bottom margin instead of right */
   }
 
   form {
-    width: 100%; /* Taking full width */
+    width: 100%;
+    /* Taking full width */
   }
 
-  input, textarea {
-    width: 100%; /* Taking full width */
+  input,
+  textarea {
+    width: 100%;
+    /* Taking full width */
   }
 
   #contact-details {
@@ -422,11 +499,13 @@ input[type="submit"]:hover {
   }
 
   #projects-section {
-    padding: 20px; /* Adjusting padding */
+    padding: 20px;
+    /* Adjusting padding */
   }
 
   #about-page {
-    padding: 20px; /* Adjusting padding */
+    padding: 20px;
+    /* Adjusting padding */
   }
 
   #headshot-section img {
@@ -443,7 +522,9 @@ input[type="submit"]:hover {
     padding: 0% 5%;
   }
 
-  input, label, textarea {
+  input,
+  label,
+  textarea {
     max-width: 90%;
   }
 

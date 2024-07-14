@@ -10,25 +10,25 @@ let letterIndex = 0;
 
 
 function typeEffect() {
-    if (letterIndex < words[wordIndex].length) {
-      typeEffectElement.textContent += words[wordIndex][letterIndex];
-      letterIndex++;
-      setTimeout(typeEffect, 100);
-    } else {
-      setTimeout(eraseEffect, 100);
-    }
+  if (letterIndex < words[wordIndex].length) {
+    typeEffectElement.textContent += words[wordIndex][letterIndex];
+    letterIndex++;
+    setTimeout(typeEffect, 100);
+  } else {
+    setTimeout(eraseEffect, 100);
   }
-  
-  function eraseEffect() {
-    if (letterIndex > 0) {
-      typeEffectElement.textContent = words[wordIndex].substring(0, letterIndex - 1);
-      letterIndex--;
-      setTimeout(eraseEffect, 100);
-    } else {
-      wordIndex = (wordIndex + 1) % words.length;
-      setTimeout(typeEffect, 100);
-    }
+}
+
+function eraseEffect() {
+  if (letterIndex > 0) {
+    typeEffectElement.textContent = words[wordIndex].substring(0, letterIndex - 1);
+    letterIndex--;
+    setTimeout(eraseEffect, 100);
+  } else {
+    wordIndex = (wordIndex + 1) % words.length;
+    setTimeout(typeEffect, 100);
   }
-  
+}
+
 
 typeEffect();
